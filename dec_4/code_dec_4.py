@@ -24,4 +24,4 @@ with open('input_dec_4.txt', 'r') as file:
             counter2 += 1
             
     print(f'Answer part 1: {counter1}')
-    print(f'Answer part 1: {counter2}')
+    print(f'Answer part 2: {counter2}')
