@@ -17,18 +17,18 @@ with open('input_dec_5.txt', 'r') as file:
                 if item != ' ':
                     s.append(item)
 
-    stacks2 = [s.copy() for s in stacks1]
+stacks2 = [s.copy() for s in stacks1]
 
-    for amount, source, target in commands:
-        for i in range(amount):
-            item1 = stacks1[source].pop(0)
-            stacks1[target].insert(0, item1)
+for amount, source, target in commands:
+    for i in range(amount):
+        item1 = stacks1[source].pop(0)
+        stacks1[target].insert(0, item1)
 
-            item2 = stacks2[source].pop(amount-i-1)
-            stacks2[target].insert(0, item2)
-     
-    answer1 = ''.join([s[0] for s in stacks1])
-    print(f'Answer part 1: {answer1}')
+        item2 = stacks2[source].pop(amount-i-1)
+        stacks2[target].insert(0, item2)
+    
+answer1 = ''.join([s[0] for s in stacks1])
+print(f'Answer part 1: {answer1}')
 
-    answer2 = ''.join([s[0] for s in stacks2])
-    print(f'Answer part 2: {answer2}')
+answer2 = ''.join([s[0] for s in stacks2])
+print(f'Answer part 2: {answer2}')
