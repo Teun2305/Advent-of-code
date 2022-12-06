@@ -4,7 +4,7 @@ with open('input_dec_5.txt', 'r') as file:
     for i, x in enumerate(file):
         if i == 0:
             n_stacks = len(x) // 4
-            stacks1= [list() for _ in range(n_stacks)]
+            stacks1 = [list() for _ in range(n_stacks)]
 
         if x[:4:] == 'move':
             line = x.split()
