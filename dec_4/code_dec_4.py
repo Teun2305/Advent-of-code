@@ -23,5 +23,5 @@ with open('input_dec_4.txt', 'r') as file:
         if len(set1.intersection(set2)) > 0:
             counter2 += 1
             
-    print(f'Answer part 1: {counter1}')
-    print(f'Answer part 2: {counter2}')
+print(f'Answer part 1: {counter1}')
+print(f'Answer part 2: {counter2}')
